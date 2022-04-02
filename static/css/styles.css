@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Part 1 - Name Section */
+.name-section {
+    margin-left: 120px;
+}
+
+.name-section img {
+    width: 9rem;
+    height: 8rem;
+}
+
+.school-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.school {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.school-name {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.school-area {
+    /* margin-left: -55px; */
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.unit {
+    text-align: center;
+}
+
+@media screen and (max-width:425px) {
+    .name-section {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .name-section img {
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .school-details {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .school {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .school-name {
+        text-align: center;
+    }
+
+    .school-area {
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .unit {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (min-width:426px) and (max-width:1024px) {
+    .name-section {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .school {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Part 2 - Title and Login Section */
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: auto;
+    color: blue;
+    text-decoration: underline;
+}
+
+.marks {
+    text-underline-offset: 5px;
+}
+
+.admn,
+.password {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    display: block;
+    margin: 0 auto;
+}
+
+.entry_text {
+    color: brown;
+}
+
+.submit_btn {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.alert-error {
+    color: red;
+    display: block;
+    margin: 10px auto;
+}
+
+
+@media screen and (max-width:425px) {
+    .title {
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    .admn,
+    .password {
+        font-size: 1.0rem;
+    }
+
+    .submit_btn {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+}
+
+/* Part 3 - Footer Section */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    /* align-self: center; */
+    margin-left: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:425px) {
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Marks Page CSS */
+
+.text-format {
+    color: rgb(4, 109, 4);
+    letter-spacing: 0.04rem;
+
+}
+
+
+.container {
+    width: 80%;
+}
+
+.heading-alignment {
+    text-align: center;
+    color: blue;
+
+}
+
+.roll-no {
+    width: 50%;
+}
+
+.class-heading {
+    width: 22.5%;
+}
+
+.section-heading {
+    width: 27.5%;
+}
+
+.notes_section {
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+}
+
+.note {
+    font-weight: bold;
+    color: brown;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    .marks {
+        margin-top: 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .roll-no {
+        width: 40%;
+    }
+
+    .class-heading {
+        width: 27.5%;
+    }
+
+    .section-heading {
+        width: 32.5%;
+    }
+
+    .notes_section {
+        margin-top: 5px;
+        width: 90%;
+        font-size: 0.9rem;
+
+    }
+
+    .footer {
+        position: relative;
+        text-align: center;
+        margin-left: 0;
+    }
+
+
+    #message1 {}
+
+}
+
+
+@media print {
+    .main-container {
+        height: 100vh;
+        border: 5px solid #000080;
+    }
+
+    .name-section {
+        margin: 10px 2px;
+    }
+
+    .name-section img {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .school {
+        font-size: 1.3rem;
+    }
+
+    .school-name {
+        margin-left: -10px;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .school-area,
+    .unit {
+        margin-left: -20px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .class-heading {
+        width: 33%;
+    }
+
+    .section-heading {
+        width: 33%;
+    }
+
+    .principal_s {
+        height: 50px;
+    }
+
+    .principal_sign {
+        width: 300px;
+        margin: 0;
+        /* border: 1px solid green; */
+    }
+
+
+    .footer {
+
+        display: none;
+    }
+
+}
+
+/* Marks Page CSS */
+
+#congrats {
+    font-weight: bold;
+    color: green;
+    font-size: 1.5rem;
+    margin-top: -20px;
+
+    /* text-align: center; */
+
+    font-family: 'Vujahday Script', cursive;
+}
+
+#promo {
+    font-weight: bold;
+    color: blue;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#message1,
+#message2,
+.message {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+
+.student_admission_number {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    /* text-decoration: underline  dotted brown; */
+    /* text-decoration: dotted; */
+}
+
+.content-area {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.adm {
+    padding-left: 15%;
+}
+
+
+.principal_s {
+    /* border: 1px solid gray; */
+    margin-top: -20px;
+    display: flex;
+    width: 60vw;
+    justify-content: end;
+    width: 100%;
+
+
+}
+
+.principal {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+
+.principal p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* padding-right: 0.1%; */
+    padding-top: 0.5%;
+}
+
+.principal_heading {
+    margin-right: 50px;
+}
+
+.principal_sign {
+    display: block;
+    width: 11%;
+    margin-right: 40px;
+
+    /* border: 1px solid green; */
+}
+
+@media screen and (max-width:768px) {
+
+    #message1,
+    #message2,
+    .message {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    #message1,
+    #message2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .principal_s p,
+    .principal p {
+        /* margin-top: 20px; */
+        font-size: 0.8rem;
+
+    }
+
+    .principal_sign {
+        /* border: 1px solid green; */
+        margin: 10px 40px 0 0;
+        width: 80px;
+        height: 35px;
+    }
+}
+
+
+#congrats {
+    font-size: 1.2rem;
+    margin-top: 0.25px;
+}
+
+
+@media print {
+
+    #message1,
+    #message2,
+    .message {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .principal_heading {
+        margin-right: 20px;
+        /* border: 1px solid green; */
+    }
+
+    .principal p {
+        font-size: 1rem;
+        margin-right: 30px;
+    }
+
+
+}
